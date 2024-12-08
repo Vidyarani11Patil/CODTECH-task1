@@ -1,10 +1,3 @@
-![Screenshot 2024-12-08 101325](https://github.com/user-attachments/assets/7fe4a0c1-8db5-49a0-80d3-0a499af191c0)
-![Screenshot 2024-12-08 101547](https://github.com/user-attachments/assets/1d3582c7-3f21-4d56-b92a-2417365dd9b3)
-![Screenshot 2024-12-08 101426](https://github.com/user-attachments/assets/ea23ed9a-197b-440e-b7a1-f48997adc7d7)
-![Screenshot 2024-12-08 101406](https://github.com/user-attachments/assets/ccc0b9c0-cbcc-492e-9e05-1c4ac3b6994b)
-![Screenshot 2024-12-08 101355](https://github.com/user-attachments/assets/75927a15-04e4-4de6-ae81-775a572711da)
-![Screenshot 2024-12-08 101347](https://github.com/user-attachments/assets/bba78dc4-c8f2-4722-8fa8-21f14edfab41)
-
 # CODTECH-task1
 
 Name : VIDYARANI PATIL
@@ -60,3 +53,11 @@ Technologies used
       
   5)  Dataset Source
       Scikit-learn: Provides the Iris dataset via sklearn.datasets.load_iris.
+
+
+![Screenshot 2024-12-08 101325](https://github.com/user-attachments/assets/7fe4a0c1-8db5-49a0-80d3-0a499af191c0)
+![Screenshot 2024-12-08 101547](https://github.com/user-attachments/assets/1d3582c7-3f21-4d56-b92a-2417365dd9b3)
+![Screenshot 2024-12-08 101426](https://github.com/user-attachments/assets/ea23ed9a-197b-440e-b7a1-f48997adc7d7)
+![Screenshot 2024-12-08 101406](https://github.com/user-attachments/assets/ccc0b9c0-cbcc-492e-9e05-1c4ac3b6994b)
+![Screenshot 2024-12-08 101355](https://github.com/user-attachments/assets/75927a15-04e4-4de6-ae81-775a572711da)
+![Screenshot 2024-12-08 101347](https://github.com/user-attachments/assets/bba78dc4-c8f2-4722-8fa8-21f14edfab41)
