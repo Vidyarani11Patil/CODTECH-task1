@@ -1,0 +1,72 @@
+/*TASK ONE: EXPLORATORY DATA ANALYSIS (EDA)
+
+Start with a dataset of your choice and perform EDA using libraries like pandas, numpy,
+and matplotlib or seaborn. Explore the data's characteristics, distributions, correlations,
+and outliers. Visualize your findings with histograms, scatter plots, and heatmaps to
+gain insights into the data. */
+
+
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Load the Iris dataset
+from sklearn.datasets import load_iris
+
+# Load the dataset
+iris_data = load_iris()
+df = pd.DataFrame(iris_data.data, columns=iris_data.feature_names)
+df['species'] = pd.Categorical.from_codes(iris_data.target, iris_data.target_names)
+
+# Show the first few rows of the dataframe
+df.head()
+
+
+# Basic information about the dataset
+df.info()
+
+# Summary statistics
+df.describe()
+
+# Check for missing values
+df.isnull().sum()
+
+# Plotting histograms for each feature
+df.drop('species', axis=1).hist(bins=20, figsize=(12, 8))
+plt.tight_layout()
+plt.show()
+
+
+# Correlation matrix
+corr_matrix = df.drop('species', axis=1).corr()
+
+
+# Heatmap to visualize the correlation matrix
+plt.figure(figsize=(8, 6))
+sns.heatmap(corr_matrix, annot=True, cmap='coolwarm', fmt='.2f', linewidths=0.5)
+plt.title("Correlation Heatmap")
+plt.show()
+
+
+# Pairplot to visualize pairwise relationships
+sns.pairplot(df, hue='species', markers=["o", "s", "D"])
+plt.show()
+
+
+# Boxplot for each feature
+plt.figure(figsize=(12, 8))
+sns.boxplot(data=df.drop('species', axis=1))
+plt.title("Boxplot for Features")
+plt.show()
+
+
+# Violin plots for each feature grouped by species
+plt.figure(figsize=(12, 8))
+for i, feature in enumerate(df.columns[:-1]):
+    plt.subplot(2, 2, i+1)
+    sns.violinplot(x='species', y=feature, data=df)
+    plt.title(f'Violin plot of {feature}')
+
+plt.tight_layout()
+plt.show()
